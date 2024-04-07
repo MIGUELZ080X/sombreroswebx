@@ -1,0 +1,158 @@
+/* Variables */
+:root {
+    --color-primario: #ffac5f; /* Naranja */
+    --color-fondo: #f9f9f9; /* Gris claro */
+    --color-texto: #333; /* Negro */
+    --color-enlace: #8e44ad; /* Morado */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-enlace);
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: var(--color-texto);
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos de la galería de productos */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--color-primario);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Estilos del formulario */
+form {
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+    place-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+label {
+    font-size: 18px;
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Estilos de los botones */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-primario);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e67e22; /* Naranja oscuro */
+}
+/* Cambio de tipo de letra */
+h1, h2, h3 {
+    font-family: "Georgia", serif; /* Cambia "Georgia" por la fuente que desees */
+}
+
+p {
+    font-family: "Times New Roman", serif; /* Cambia "Times New Roman" por la fuente que desees */
+}

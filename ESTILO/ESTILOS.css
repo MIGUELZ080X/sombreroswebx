@@ -1,0 +1,238 @@
+/* Variables */
+:root {
+    --color-primario: #ffac5f; /* Naranja */
+    --color-fondo: #f9f9f9; /* Gris claro */
+    --color-texto: #333; /* Negro */
+    --color-enlace: #8e44ad; /* Morado */
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-fondo);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+header h2 {
+    font-size: 24px;
+    margin: 0;
+    transition: font-size 0.5s ease-in-out;
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--color-enlace);
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: var(--color-texto);
+    margin-bottom: 20px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilos de la galería de productos */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff; /* Blanco */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cuadro img:hover {
+    transform: scale(1.1);
+}
+
+/* Animaciones para los títulos y precios */
+.cuadro h2,
+.cuadro p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.producto:hover .cuadro h2,
+.producto:hover .cuadro p {
+    opacity: 1;
+    transition-delay: 0.2s; /* Retraso en la animación */
+}
+
+/* Colores */
+h1 {
+    color: var(--color-texto); /* Negro */
+}
+
+h2 {
+    color: var(--color-texto); /* Negro */
+}
+
+p {
+    color: var(--color-texto); /* Negro */
+}
+
+/* Estilos para el video */
+video {
+    width: 80%;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+video:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del formulario */
+form {
+    margin-top: 30px;
+    display: grid;
+    gap: 15px;
+    place-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+label {
+    font-size: 18px;
+    color: var(--color-texto); /* Negro */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Estilos de los botones */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-primario); /* Naranja */
+    color: white;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #e67e22; /* Naranja oscuro */
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .producto {
+        width: calc(50% - 20px);
+    }
+}
+/* Cambio de tipo de letra */
+h1, h2, h3 {
+    font-family: "Georgia", serif; /* Cambia "Georgia" por la fuente que desees */
+}
+
+p {
+    font-family: "Times New Roman", serif; /* Cambia "Times New Roman" por la fuente que desees */
+}
